@@ -198,7 +198,7 @@ body{
 #w-section{
   height: auto;
   width: 75%;
-  margin: 6vh 0;
+  margin: 3vh 0;
   border-radius: 1px;
   background-color: rgb(220, 220, 220);
   background-image: linear-gradient(to top right, rgb(220, 220, 220), rgb(230, 230, 230), rgb(220, 220, 220));

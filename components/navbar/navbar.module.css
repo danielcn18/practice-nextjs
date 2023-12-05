@@ -9,6 +9,8 @@
 .logo {
   font-weight: bold;
   font-size: 22px;
+  color: var(--match1);
+  text-decoration: none;
 }
 
 .links {
@@ -16,6 +18,13 @@
   align-items: center;
   margin-right:20px;
   gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--match2);
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .logout {

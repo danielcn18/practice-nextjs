@@ -1,8 +1,7 @@
 import Navbar from "@/components/navbar/Navbar";
 import { Inter, Roboto, Poppins } from "next/font/google";
 import Footer from "@/components/footer/Footer";
-
-import './globals.css'
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,15 +15,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="container">
-          <Navbar />
-          {children}
+          <div className="main-image">
+            <Navbar />
+            {children}
+          </div>
           <Footer /> 
         </div>
-        
-     
-        
-        
-        </body>
+      </body>
     </html>
   )
 }

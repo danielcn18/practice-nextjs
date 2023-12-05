@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        /* Swiper Colors */
+        .swiper-button-next, .swiper-button-prev{
+            color: rgb(167, 45, 83);
+        }
+        .swiper-pagination-bullet-active {
+            background: rgb(37, 111, 140);
+        }
+        .swiper-pagination-bullet{
+            width: 0.8rem;
+            height: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-image" class="container d-flex justify-content-center align-items-center"><!-- <div><img src="./Images/background1.2.jpg" class="img-fluid" /></div> --></div>
+    <div class="section">
+        <div class="nav-top">
+            <nav class="nav">
+                <a href="#to-home" target="_self">Home</a>
+                <a href="#to-work" target="_self">Work</a>
+                <a href="#to-contact" target="_self">Contact</a>
+            </nav>
+        </div>
+        <div class="name-area">
+            <div class="name-content">
+                <div class="line">
+                    <p class="word intro active">Hi, my name is</p>
+                </div>
+                <div class="line">
+                    <p class="word fancy" id="channel-link1">Daniel</p>
+                    <p class="word fancy" id="channel-link2">Chiquete</p>
+                </div>
+                <div class="line">
+                    <p class="word intro active sub-intro">I am a front-end</p>
+                </div>
+                <div class="line">
+                    <p class="word intro active sub-intro">web developer</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="auto-section">
+        <div class="des-contain">
+            <div id="w-section">
+                <p>Born and raised in Arizona, I have been exposed to various arts and technologies throughout my life. These experiences led to my interest in learning how to code various projects and in multiple languages. I currently work with front-end web developing, however, my main interest lies within back-end web development and software/game development.</p>
+            </div>
+        </div>
+    </div>
+    <!-- 
+        Tips & Tricks:
+        * could implement a filter for the projects, Ex. Filter from oldest to newest project
+     -->
+    <div class="auto-section" id="to-work">
+        <div class="works-contain">
+            <p id="works-title">Projects</p>            
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-JS-Pokemon-Game/'"><img src="./Images/JS Pokemon Game.png"></div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Red-Ball-Survey-Tutorial/'"><img src="./Images/Pizza Form.png"></div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-CSS-Grid-Costume-Exercise-Quarter-4-Week-2/'"><img src="./Images/Costume Exercise.png"></div>                          </div>
+                    </div>                    
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-CSS-Transition-Captain-Marvel-Card-Effect/'"><img src="./Images/CSS Transition.png"></div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-SVG-And-Canvas/'"><img src="./Images/SVG & Canvas.png"></div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-CSS-Mario-Animation/'"><img src="./Images/CSS Animation.png"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-jQuery-Seattle-Project/'"><img src="./Images/jQuery Project.png"></div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Bootstrap-Ecommerce-Webpage/'"><img src="./Images/BS ECommerce Website.png"></div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Photo-Gallery/'"><img src="./Images/Photo Gallery.png"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Responsive-Navbar-Activity/'"><img src="./Images/Responsive Navbar.png"></div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Guess-The-Number-Game/'"><img src="./Images/Guess Game.png"></div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-To-Do-List/'"><img src="./Images/JS To Do List.png"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Bootstrap-Ecommerce-Webpage/'"><img src="./Images/BS ECommerce Website.png"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href=''">The first flexbox, the one with header, side, footer<img src="./Images/Flexbox Activity.png"></div>
+                            <div class="box" onClick="location.href=''"><img src="./Images/JS Calender.png">JS Calender</div>
+                            <div class="box" onClick="location.href=''"><img src="./Images/JS Quiz App.png">JS Quiz App</div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-API-Exercise/'"><img src="./Images/API Exercise.png"></div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Bootstrap-Ecommerce-Webpage/'">Bootstrap ECommerce Website</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Chat-UI/'">Chat UI Assignment</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Movie-Gallery/'">Responsive and Scrollable Movie Gallery</div>                
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Career-Resume/'">Career/Resume</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-CSS-Transition-Captain-Marvel-Card-Effect/'">CSS Transition - Card Effect - Captain Marvel</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Pokemon-Game/'">Javascript - My Game</div>                
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Advanced-CSS-Layouts/'">Advanced CSS Layouts - Quarter 4 Week 3</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-CSS-Grid-Costume-Exercise-Quarter-4-Week-2/'">CSS Grid Costume Exercise - Quarter 4 Week 2</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-CSS-Grid-Layouts/'">CSS Grid Layouts - Quarter 4 Week 2</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-CSS-Mario-Animation/'">CSS Mario Animation</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Canvas/'">CSS Canvas</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-SVG-Scalable-Vector-Graphics/'">CSS SVG</div>                
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Photo-Gallery/'">Photo Gallery</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-DOM-Manipulation-Introduction/'">DOM Manipulation</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-CSS-Filters/'">CSS Filters</div>                
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Form-Validation-Exercise-1/'">Form Validation Exercise 1</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Red-Ball-Survey-Tutorial/'">Designing Form Pizzeria</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Responsive-Navbar-Activity/'">Responsive Navbar - Media Queries and Hamburger Menu</div>                
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Responsive-Navbar-Activity/'">CSS Media Queries and hamburger menu</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Form-Validation-Exercise-2/'">Form Validation Exercise 2</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Responsive-Photo-Gallery-Navbar/'">Responsive Photo Gallery & Reponsive Navbar</div>                
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Guess-The-Number-Game/'">Guess The Number Game</div> 
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Random-Weather-Using-Slice-Method/'">Weather API</div>
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-Scoring-Quiz-Five-Questions/'">Quiz App</div>                
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-grid">
+                            <div class="box" onClick="location.href='https://danielcn18.github.io/WM-jQuery-Seattle-Project/'">jQuery Project</div> 
+                            <div class="box" onClick="location.href=''"></div>
+                            <div class="box" onClick="location.href=''"></div>                
+                        </div>
+                    </div> -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="auto-section" id="to-contact">
+        <div class="contact-contain-outer">
+            <div class="contact-contain-inner">
+                <div class="contact-header">
+                    <p>Contact Me</p>
+                </div>
+                <div class="contact-body">
+                    <!-- <div class="contact-subheader">
+                        <p>Send me a message</p>
+                    </div> -->
+                    <div class="contact-s">
+                        <div id="name-s">
+                            <label for="name">Your Name</label><br>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div id="email-s">
+                            <label for="email">Email Address</label><br>
+                            <input type="email" id="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div id="message-s">
+                            <label for="message">Your Message</label><br>
+                            <input type="text" id="message" placeholder="Enter your message" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div id="foot">
+            <p>Daniel Chiquete</p>
+            <div id="socials">
+                <a href="https://www.linkedin.com/in/daniel-c-b8b58525a/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>  
+        </div>
+    </footer>
+    <script src="home.js"></script>
+    <!-- Swiperjs -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        /* Swiper Function(s) */
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>

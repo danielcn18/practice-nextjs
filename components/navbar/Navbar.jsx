@@ -14,7 +14,9 @@ const links = [
     id: 2,
     title: "Blog App",
     url: "/blogapp",
-  },
+  },{ id: 3,
+    title: "Dashboard",
+    url: "/dashboard",}/* ,
   {
     id: 3,
     title: "Lorem",
@@ -29,7 +31,7 @@ const links = [
     id: 5,
     title: "Lorem",
     url: "/",
-  },
+  }, */
 ];
 
 const Navbar = () => {
